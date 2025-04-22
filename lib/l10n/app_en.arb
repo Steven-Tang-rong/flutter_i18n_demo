@@ -88,5 +88,10 @@
   "other": "other",
   "@other": {
     "description": "Gender other"
+  },
+  "gender": "gender",
+  "@gender": {
+    "description": "Gender"
   }
+
 }

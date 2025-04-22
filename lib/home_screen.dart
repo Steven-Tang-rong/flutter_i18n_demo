@@ -62,7 +62,8 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(height: 20),
               Row(
                 children: [
-                  Text('gender: '),
+                  Text(localizations.gender),
+                  const SizedBox(width: 10),
                   DropdownButton<Gender>(
                     iconSize: 40,
                     iconEnabledColor: Theme.of(context).primaryColor,
