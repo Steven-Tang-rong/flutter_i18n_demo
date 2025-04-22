@@ -1,0 +1,92 @@
+{
+  "language": "English",
+  "@language": {
+    "description": "The current language"
+  },
+  "change_language": "Change Language",
+  "@change_language": {
+    "description": "Change the app language"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings menu"
+  },
+  "about": "About",
+  "@about": {
+    "description": "About section"
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "User profile"
+  },
+  "lastUpdated": "Last updated: {date}",
+  "@lastUpdated": {
+    "description": "Last updated date",
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMMMd"
+      }
+    }
+  },
+  "itemCount": "{count, plural, =0{No items} =1{1 item} other{{count} items}}",
+  "@itemCount": {
+    "description": "Number of items with plural forms",
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "price": "Price: {price}",
+  "@price": {
+    "description": "Price with currency",
+    "placeholders": {
+      "price": {
+        "type": "double",
+        "format": "currency",
+        "optionalParameters": {
+          "symbol": "$",
+          "decimalDigits": 2
+        }
+      }
+    }
+  },
+  "rating": "Rating: {rating}",
+  "@rating": {
+    "description": "Rating with decimal number",
+    "placeholders": {
+      "rating": {
+        "type": "double",
+        "format": "decimalPattern",
+        "optionalParameters": {
+          "decimalDigits": 1
+        }
+      }
+    }
+  },
+  "greetUser": "{gender, select, male{Hello Mr. {name}} female{Hello Ms. {name}} other{Hello {name}}}",
+  "@greetUser": {
+    "description": "Greeting based on gender",
+    "placeholders": {
+      "gender": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "male": "male",
+  "@male": {
+    "description": "Gender male"
+  },
+  "female": "female",
+  "@female": {
+    "description": "Gender female"
+  },
+  "other": "other",
+  "@other": {
+    "description": "Gender other"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "language": "日本語",
+  "@language": {
+    "description": "The current language"
+  },
+  "change_language": "言語を変更",
+  "@change_language": {
+    "description": "Change the app language"
+  },
+  "settings": "設定",
+  "@settings": {
+    "description": "Settings menu"
+  },
+  "about": "概要",
+  "@about": {
+    "description": "About section"
+  },
+  "profile": "プロフィール",
+  "@profile": {
+    "description": "User profile"
+  },
+  "lastUpdated": "最終更新：{date}",
+  "@lastUpdated": {
+    "description": "Last updated date",
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMMMd"
+      }
+    }
+  },
+  "itemCount": "{count, plural, =0{アイテムなし} =1{1個のアイテム} other{{count}個のアイテム}}",
+  "@itemCount": {
+    "description": "Number of items with plural forms",
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "price": "価格：{price}",
+  "@price": {
+    "description": "Price with currency",
+    "placeholders": {
+      "price": {
+        "type": "double",
+        "format": "currency",
+        "optionalParameters": {
+          "symbol": "¥",
+          "decimalDigits": 0
+        }
+      }
+    }
+  },
+  "rating": "評価：{rating}",
+  "@rating": {
+    "description": "Rating with decimal number",
+    "placeholders": {
+      "rating": {
+        "type": "double",
+        "format": "decimalPattern",
+        "optionalParameters": {
+          "decimalDigits": 1
+        }
+      }
+    }
+  },
+  "greetUser": "{gender, select, male{{name}さん} female{{name}さん} other{{name}さん}}",
+  "@greetUser": {
+    "description": "Greeting based on gender",
+    "placeholders": {
+      "gender": {},
+      "name": {}
+    }
+  },
+  "male": "男性",
+  "@male": {
+    "description": "Gender male"
+  },
+  "female": "女性",
+  "@female": {
+    "description": "Gender female"
+  },
+  "other": "その他",
+  "@other": {
+    "description": "Gender other"
+  }
+}

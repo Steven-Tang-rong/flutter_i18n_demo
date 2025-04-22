@@ -1,0 +1,88 @@
+{
+  "language": "中文",
+  "@language": {
+    "description": "The current language"
+  },
+  "change_language": "更改語言",
+  "@change_language": {
+    "description": "Change the app language"
+  },
+  "settings": "設定",
+  "@settings": {
+    "description": "Settings menu"
+  },
+  "about": "關於",
+  "@about": {
+    "description": "About section"
+  },
+  "profile": "個人資料",
+  "@profile": {
+    "description": "User profile"
+  },
+  "lastUpdated": "最後更新：{date}",
+  "@lastUpdated": {
+    "description": "Last updated date",
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMMMd"
+      }
+    }
+  },
+  "itemCount": "{count, plural, =0{沒有項目} =1{1個項目} other{{count}個項目}}",
+  "@itemCount": {
+    "description": "Number of items with plural forms",
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "price": "價格：{price}",
+  "@price": {
+    "description": "Price with currency",
+    "placeholders": {
+      "price": {
+        "type": "double",
+        "format": "currency",
+        "optionalParameters": {
+          "symbol": "¥",
+          "decimalDigits": 2
+        }
+      }
+    }
+  },
+  "rating": "評分：{rating}",
+  "@rating": {
+    "description": "Rating with decimal number",
+    "placeholders": {
+      "rating": {
+        "type": "double",
+        "format": "decimalPattern",
+        "optionalParameters": {
+          "decimalDigits": 1
+        }
+      }
+    }
+  },
+  "greetUser": "{gender, select, male{您好，{name}先生} female{您好，{name}女士} other{您好，{name}}}",
+  "@greetUser": {
+    "description": "Greeting based on gender",
+    "placeholders": {
+      "gender": {},
+      "name": {}
+    }
+  },
+  "male": "男性",
+  "@male": {
+    "description": "Gender male"
+  },
+  "female": "女性",
+  "@female": {
+    "description": "Gender female"
+  },
+  "other": "其他",
+  "@other": {
+    "description": "Gender other"
+  }
+}
