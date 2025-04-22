@@ -29,7 +29,7 @@
       }
     }
   },
-  "itemCount": "{count, plural, =0{アイテムなし} =1{1個のアイテム} other{{count}個のアイテム}}",
+  "itemCount": "{count, plural, =0{アイテムなし} other{{count}個のアイテム}}",
   "@itemCount": {
     "description": "Number of items with plural forms",
     "placeholders": {
