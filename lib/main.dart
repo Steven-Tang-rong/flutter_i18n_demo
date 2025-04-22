@@ -18,21 +18,12 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
    Locale? _locale;
 
-  // void setLocale(Locale locale) {
-  //   if (!AppLocalizations.supportedLocales.contains(locale)) return;
-
-  //   setState(() {
-  //     _locale = locale;
-  //   });
-  // }
-
   @override
   void initState() {
     super.initState();
     _loadSavedLanguage();
   }
   
-  // Load saved language preference when app starts
   Future<void> _loadSavedLanguage() async {
     final savedLocale = await LanguagePreferences.getSavedLocale();
     if (savedLocale != null) {
@@ -42,7 +33,6 @@ class _MyAppState extends State<MyApp> {
     }
   }
 
-  // Set locale and save preference
   void setLocale(Locale locale) async {
     setState(() => _locale = locale);
     await LanguagePreferences.setLanguageCode(locale.languageCode);
@@ -52,6 +42,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter I18n Demo',
       locale: _locale,
       onGenerateTitle: (context) => AppLocalizations.of(context)!.language,
